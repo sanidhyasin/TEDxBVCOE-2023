@@ -89,6 +89,15 @@ const Footer = () => {
             </a>
             . All Rights Reserved.
           </span>
+          <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
+            Developed by{" "}
+            <a
+              href="https://linktr.ee/sanidhya.web3"
+              className="underline italic"
+            >
+              Sanidhya Singh
+            </a>
+          </span>
           <div class="flex mt-4 sm:justify-center sm:mt-0">
             <a
               href="#"

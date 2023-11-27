@@ -64,7 +64,7 @@ const Speakers = () => {
   return (
     <div className=" min-h-[700px] w-full flex flex-col bg-black px-10 items-center gap-6">
       <h1 className="text-3xl font-bold text-white">Speakers</h1>
-      <div className="grid grid-cols-3 gap-12">
+      <div className="grid sm:grid-cols-3 grid-cols-1 gap-12">
         {SpeakersInfo.map((speaker) => (
           <Card
             key={speaker.id}

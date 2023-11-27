@@ -7,13 +7,13 @@ const About = () => {
   const [TedxBVCOE, setTedxBVCOE] = useState(false);
 
   return (
-    <div className="flex w-full flex-col items-center h-[600px] bg-black gap-10">
+    <div className="flex w-full flex-col items-center sm:h-[600px] h-[700px] bg-black gap-10">
       <h1 className=" text-white text-2xl font-bold top-0">What is TED?</h1>
       <div className=" flex flex-row items-center justify-center gap-4">
         <button
           className={`${
             Ted ? "bg-white text-black font-bold" : "bg-none text-white"
-          } h-16 px-8 py-2 items-center justify-center border-2 border-white rounded-xl font-bold`}
+          } sm:h-16 h-14 sm:px-8 px-4 py-2 items-center justify-center border-2 border-white rounded-xl font-bold`}
           onClick={() => {
             setTed(!Ted);
             setTedx(false);
@@ -25,7 +25,7 @@ const About = () => {
         <button
           className={`${
             Tedx ? "bg-white text-black font-bold" : "bg-none text-white"
-          } h-16 px-8 py-2 items-center justify-center border-2 border-white rounded-xl font-bold`}
+          } sm:h-16 h-14 sm:px-8 px-4 py-2 items-center justify-center border-2 border-white rounded-xl font-bold`}
           onClick={() => {
             setTed(false);
             setTedx(!Tedx);
@@ -37,7 +37,7 @@ const About = () => {
         <button
           className={`${
             TedxBVCOE ? "bg-white text-black font-bold" : "bg-none text-white"
-          } h-16 px-8 py-2 items-center justify-center border-2 border-white rounded-xl font-bold`}
+          } sm:h-16 h-14 sm:px-8 px-4 py-2 items-center justify-center border-2 border-white rounded-xl font-bold`}
           onClick={() => {
             setTed(false);
             setTedx(false);
@@ -47,11 +47,11 @@ const About = () => {
           TEDxBVCOE
         </button>
       </div>
-      <div className=" w-[600px] font-medium">
+      <div className=" sm:w-[600px] font-medium px-10">
         <p
           className={`${
             Ted ? "flex" : "hidden"
-          } text-white text-2xl text-justify`}
+          } text-white text-xl sm:text-justify text-justify`}
         >
           TED (Technology, Entertainment, Design) is a global platform that
           hosts conferences featuring influential speakers from various fields
@@ -63,7 +63,7 @@ const About = () => {
         <p
           className={`${
             Tedx ? "flex" : "hidden"
-          } text-white text-2xl text-justify`}
+          } text-white text-xl sm:text-justify text-justify`}
         >
           TEDx events are independently organized TED-like conferences that can
           take place anywhere in the world. These events aim to bring the spirit
@@ -75,7 +75,7 @@ const About = () => {
         <p
           className={`${
             TedxBVCOE ? "flex" : "hidden"
-          } text-white text-2xl text-justify`}
+          } text-white text-xl sm:text-justify text-justify`}
         >
           TEDxBVCOE is a specific instance of a TEDx event affiliated with
           Bharati Vidyapeeth College of Engineering (BVCOE) in Delhi, India.
