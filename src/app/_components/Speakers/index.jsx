@@ -1,6 +1,6 @@
 import React from "react";
 import kanya from "../../_assets/kanyaa.jpg";
-import Card from "./card";
+import Card from "./Card";
 
 const Speakers = () => {
   const SpeakersInfo = [
