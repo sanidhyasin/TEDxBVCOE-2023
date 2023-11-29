@@ -13,14 +13,17 @@ export const FAQs = ({ faqData }) => {
   };
 
   return (
-    <div className=" bg-black w-full min-h-[400px] items-center flex flex-col pt-20 px-6">
-      <h1 className=" sm:text-3xl text-3xl font-bold text-white pb-6 text-center">
+    <div
+      id="faqs"
+      className=" bg-black w-full min-h-[400px] items-center flex flex-col pt-20 px-6"
+    >
+      <h1 className=" sm:text-3xl text-3xl font-bold text-white pb-6 text-center uppercase">
         Frequently Asked Questions
       </h1>
       {faqData.map((faq, index) => (
         <div
           key={index}
-          className="faq-item gap-8 sm:w-1/2 transition-transform"
+          className="faq-item gap-8 sm:w-3/5 transition-transform"
         >
           <div
             className={`faq-question ${

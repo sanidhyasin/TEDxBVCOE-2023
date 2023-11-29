@@ -1,14 +1,23 @@
+"use client";
 import Image from "next/image";
+
 import React from "react";
 import TedLogo from "../../_assets/homeLogo.svg";
 
 const Footer = () => {
   return (
-    <footer class="bg-black w-full">
-      <div class="mx-auto w-full sm:max-w-full max-w-screen-xl p-4 py-6 lg:py-8">
+    <footer id={"contact"} class="bg-black w-full pt-10">
+      <div class="mx-auto w-full sm:max-w-full max-w-screen-xl px-10 py-6 lg:py-8">
         <div class="md:flex md:justify-between">
           <div class="mb-6 md:mb-0">
-            <a href="https://flowbite.com/" class="flex items-center">
+            <a
+              href=""
+              class="flex items-center"
+              onClick={(e) => {
+                window.scrollTo(0, 0);
+                e.preventDefault();
+              }}
+            >
               <Image
                 src={TedLogo}
                 class=" me-3"
@@ -20,8 +29,8 @@ const Footer = () => {
               </span> */}
             </a>
           </div>
-          <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
-            <div>
+          <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-2">
+            {/* <div>
               <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
                 Resources
               </h2>
@@ -37,7 +46,7 @@ const Footer = () => {
                   </a>
                 </li>
               </ul>
-            </div>
+            </div> */}
             <div>
               <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
                 Follow us
@@ -45,18 +54,15 @@ const Footer = () => {
               <ul class="text-gray-500 dark:text-gray-400 font-medium">
                 <li class="mb-4">
                   <a
-                    href="https://github.com/themesberg/flowbite"
+                    href="https://www.instagram.com/tedxbvcoe.2023"
                     class="hover:underline "
                   >
-                    Github
+                    Instagram
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="https://discord.gg/4eeurUVvTy"
-                    class="hover:underline"
-                  >
-                    Discord
+                  <a href="Linkedin" class="hover:underline">
+                    Linkedin
                   </a>
                 </li>
               </ul>
@@ -81,10 +87,17 @@ const Footer = () => {
           </div>
         </div>
         <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-        <div class="sm:flex sm:items-center sm:justify-between">
+        <div class="sm:flex sm:flex-row flex flex-col gap-2 sm:items-center sm:justify-between">
           <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">
             © 2023{" "}
-            <a href="/" class="hover:underline">
+            <a
+              href="/"
+              class="hover:underline"
+              onClick={(e) => {
+                window.scrollTo(0, 0);
+                e.preventDefault();
+              }}
+            >
               TEDxBVCOE
             </a>
             . All Rights Reserved.
@@ -100,40 +113,36 @@ const Footer = () => {
           </span>
           <div class="flex mt-4 sm:justify-center sm:mt-0">
             <a
-              href="#"
+              href="https://www.instagram.com/tedxbvcoe.2023"
               class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
             >
               <svg
-                class="w-4 h-4"
-                aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 64 64"
                 fill="currentColor"
-                viewBox="0 0 8 19"
+                width="30px"
+                height="30px"
               >
-                <path
-                  fill-rule="evenodd"
-                  d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z"
-                  clip-rule="evenodd"
-                />
+                <path d="M 21.580078 7 C 13.541078 7 7 13.544938 7 21.585938 L 7 42.417969 C 7 50.457969 13.544938 57 21.585938 57 L 42.417969 57 C 50.457969 57 57 50.455062 57 42.414062 L 57 21.580078 C 57 13.541078 50.455062 7 42.414062 7 L 21.580078 7 z M 47 15 C 48.104 15 49 15.896 49 17 C 49 18.104 48.104 19 47 19 C 45.896 19 45 18.104 45 17 C 45 15.896 45.896 15 47 15 z M 32 19 C 39.17 19 45 24.83 45 32 C 45 39.17 39.169 45 32 45 C 24.83 45 19 39.169 19 32 C 19 24.831 24.83 19 32 19 z M 32 23 C 27.029 23 23 27.029 23 32 C 23 36.971 27.029 41 32 41 C 36.971 41 41 36.971 41 32 C 41 27.029 36.971 23 32 23 z" />
               </svg>
-              <span class="sr-only">Facebook page</span>
+              <span class="sr-only">Instagram page</span>
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/company/tedx-bvcoe/mycompany/"
               class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
             >
               <svg
-                class="w-4 h-4"
-                aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
+                width="30px"
+                height="30px"
                 fill="currentColor"
-                viewBox="0 0 21 16"
+                viewBox="0 0 50 50"
               >
-                <path d="M16.942 1.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.585 11.585 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3A17.392 17.392 0 0 0 .182 13.218a15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.63 10.63 0 0 1-1.706-.83c.143-.106.283-.217.418-.33a11.664 11.664 0 0 0 10.118 0c.137.113.277.224.418.33-.544.328-1.116.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM6.678 10.813a1.941 1.941 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z" />
+                <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"></path>
               </svg>
-              <span class="sr-only">Discord community</span>
+              <span class="sr-only">Linkedin Page</span>
             </a>
-            <a
+            {/* <a
               href="#"
               class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
             >
@@ -189,7 +198,7 @@ const Footer = () => {
                 />
               </svg>
               <span class="sr-only">Dribbble account</span>
-            </a>
+            </a> */}
           </div>
         </div>
       </div>

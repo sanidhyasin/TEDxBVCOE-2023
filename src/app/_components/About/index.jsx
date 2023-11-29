@@ -1,5 +1,8 @@
 "use client";
 import React, { useState } from "react";
+import Image from "next/image";
+import man from "../../_assets/man_line_art.svg";
+import woman from "../../_assets/woman_line_art.svg";
 
 const About = () => {
   const [Ted, setTed] = useState(true);
@@ -7,8 +10,34 @@ const About = () => {
   const [TedxBVCOE, setTedxBVCOE] = useState(false);
 
   return (
-    <div className="flex w-full flex-col items-center sm:h-[600px] h-[700px] bg-black gap-10">
-      <h1 className=" text-white text-2xl font-bold top-0">What is TED?</h1>
+    <div className="flex relative w-full flex-col items-center sm:h-[600px] h-[700px] bg-black gap-10">
+      <Image
+        className="left-0 sm:visible invisible -top-20 absolute"
+        src={man}
+        height={450}
+        width={450}
+      ></Image>
+      <Image
+        className="right-0 sm:visible invisible -top-20 absolute"
+        src={woman}
+        height={450}
+        width={450}
+      ></Image>
+      <Image
+        className="left-0 sm:invisible visible top-36 absolute"
+        src={man}
+        height={500}
+        width={190}
+      ></Image>
+      <Image
+        className="right-0 sm:invisible visible top-36 absolute"
+        src={woman}
+        height={500}
+        width={190}
+      ></Image>
+      <h1 className=" text-white text-2xl font-bold top-0 uppercase">
+        What is TED?
+      </h1>
       <div className=" flex flex-row items-center justify-center gap-4">
         <button
           className={`${
